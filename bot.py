@@ -11,7 +11,9 @@ WEBHOOK_URL = os.getenv('WEBHOOK_URL')
 
 # Função para enviar a taxa de câmbio para o WebHook
 def send_to_webhook(moeda_valor, moeda_buy, taxa_cambio):
-    message = {"content": f"{moeda_valor} para {moeda_buy} é R${taxa_cambio}"}
+    message = {"content": f"{moeda_valor} para {moeda_buy} é R${taxa_cambio}",
+               "avatar_url": "https://www.pngarts.com/files/6/Money-Emoji-PNG-Photo.png"  # Opcional: URL de imagem para o avatar
+               }
     response = requests.post(WEBHOOK_URL, data=json.dumps(message), headers={"Content-Type": "application/json"})
     if response.status_code == 204:
         print(f"Mensagem enviada com sucesso para {moeda_valor} para {moeda_buy}!")
