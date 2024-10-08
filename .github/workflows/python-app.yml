@@ -2,7 +2,7 @@ name: Run Python Script Thrice Daily
 
 on:
   schedule:
-    - cron: '*/20 * * * *'   # A cada 20 minutos
+    - cron: '*/50 * * * *'   # A cada 20 minutos
   workflow_dispatch:
 
 jobs:
