@@ -2,6 +2,7 @@
     "URL_ENDPOINT": "https://v6.exchangerate-api.com/v6/",
     "API_KEY": "a5617664086a08a08be275c6",
     "MOEDA_VALOR": "USD",
-    "MOEDA_BUY": "BRL"
+    "MOEDA_BUY": "BRL",
+    "WEBHOOK_URL": "https://discord.com/api/webhooks/1293181788713259068/yWDEo3hr9ulgjySt6g_pEEZUhCgnFT7ejWctbfQ1fYeHuB1KvrBb8vLlNxeJw16YatvY"
   }
   
