@@ -3,7 +3,7 @@ name: Run Python Script
 # Definir quando esse workflow será executado
 on:
   schedule:
-    - cron: '0 9 * * *'   # 09:00 UTC
+    - cron: '0 10 * * *'   # 09:00 UTC
     - cron: '0 16 * * *'  # 16:00 UTC
     - cron: '0 21 * * *'  # 21:00 UTC
   workflow_dispatch:
